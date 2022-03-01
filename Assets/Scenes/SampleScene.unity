@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 769258296}
   - component: {fileID: 769258301}
   - component: {fileID: 769258300}
+  - component: {fileID: 769258302}
   m_Layer: 0
   m_Name: snowboarder
   m_TagString: Untagged
@@ -358,8 +359,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 15
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -415,6 +416,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.36, y: -0.8}
   m_Size: {x: 1.7, y: 0.15}
   m_Direction: 1
+--- !u!114 &769258302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769258295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dace07c53439ff43be6e220401e8a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fltorqueAmount: 7
 --- !u!1 &1167723647
 GameObject:
   m_ObjectHideFlags: 3
@@ -1204,7 +1218,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 3
+  m_Speed: 5
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
