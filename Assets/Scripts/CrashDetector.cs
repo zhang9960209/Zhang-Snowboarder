@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class CrashDetector : MonoBehaviour
 {
     [SerializeField] float LoadingDelay = 1f;
+    [SerializeField] ParticleSystem crashEffect;
     void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.tag == "Ground")
         {
             Debug.Log("Shit! I am dead!");
             Invoke("ReloadScene",LoadingDelay);
+            crashEffect.Play();
         }
     }
 
