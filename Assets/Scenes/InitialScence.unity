@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102782121}
   - component: {fileID: 102782122}
+  - component: {fileID: 102782123}
   m_Layer: 0
   m_Name: Snow-Rock-2
   m_TagString: Untagged
@@ -148,8 +149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102782120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.24, y: -5.1099997, z: 0}
-  m_LocalScale: {x: 0.7086, y: 0.6042, z: 1}
+  m_LocalPosition: {x: 64.2099, y: -5.2003, z: 0}
+  m_LocalScale: {x: 0.68507445, y: 0.50045884, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 274965898}
@@ -207,6 +208,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &102782123
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102782120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -13.99, y: 5.6}
+  m_Size: {x: 2.46, y: 2.51}
+  m_Direction: 1
 --- !u!1 &137981614
 GameObject:
   m_ObjectHideFlags: 0
