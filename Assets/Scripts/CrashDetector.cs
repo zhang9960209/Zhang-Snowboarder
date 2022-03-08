@@ -12,6 +12,7 @@ public class CrashDetector : MonoBehaviour
     {
         if(other.tag == "Ground")
         {
+            FindObjectOfType<PlayerController>().MoveDenied();
             Debug.Log("Shit! I am dead!");
             GetComponent<AudioSource>().PlayOneShot(CrashSFX);
             Invoke("ReloadScene",LoadingDelay);
